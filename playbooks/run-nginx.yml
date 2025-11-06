@@ -1,0 +1,14 @@
+- name: Lancer un conteneur Nginx
+  hosts: web
+  become: true
+
+  tasks:
+    - name: Lancer Nginx via Docker avec volume
+      community.docker.docker_container:
+        name: nginx
+        image: nginx:latest
+        state: started
+        ports:
+          - "80:80"
+        volumes:
+          - "/home/High/site:/usr/share/nginx/html"
