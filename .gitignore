@@ -5,6 +5,8 @@
 *.crt
 *.enc
 *.gpg
+.env
+.env.*
 *.bak
 
 # 🐳 Docker
