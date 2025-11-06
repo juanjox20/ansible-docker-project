@@ -1,0 +1,38 @@
+# 🔐 Clés SSH et fichiers sensibles
+*.pem
+*.key
+*.pub
+*.crt
+*.enc
+*.gpg
+*.bak
+
+# 🐳 Docker
+*.log
+docker-compose.override.yml
+.env
+.env.*
+
+# 📦 Node / Python / Pipenv (si jamais tu ajoutes du code)
+node_modules/
+__pycache__/
+*.pyc
+Pipfile.lock
+poetry.lock
+
+# 🧪 Ansible
+*.retry
+*.vault
+*.tar.gz
+*.zip
+
+# 🧹 Systèmes
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# 🗂️ Semaphore ou fichiers temporaires
+/tmp/
+inventory/hosts.ini
+inventory/*.retry
